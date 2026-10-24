@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>spark — 计算机学生 / AI 学习者</title>
+    <meta
+      name="description"
+      content="spark 的个人主页：一名在读大二计算机学生与 AI 学习者，记录网络安全学习、项目实践和对技术的持续好奇。"
+    >
+    <meta name="theme-color" content="#ffe600">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="spark — 计算机学生 / AI 学习者">
+    <meta
+      property="og:description"
+      content="写代码、做项目，也做真正有人使用的小产品。这里记录 spark 的学习轨迹与正在发生的事。"
+    >
+    <meta property="og:locale" content="zh_CN">
+    <meta property="og:site_name" content="spark">
+
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">跳到主要内容</a>
+
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="spark 首页">
+        <span class="brand-mark" aria-hidden="true">✦</span>
+        <span>spark</span>
+      </a>
+
+      <nav aria-label="主导航">
+        <a href="#learning">学习轨迹</a>
+        <a href="#about">关于我</a>
+        <a href="#note">留一句话</a>
+      </nav>
+    </header>
+
+    <main id="main-content">
+      <section class="hero" id="top" aria-labelledby="hero-title">
+        <canvas class="spark-canvas" id="spark-canvas" aria-hidden="true"></canvas>
+
+        <div class="hero-copy">
+          <p class="hello">人类朋友，你好👋</p>
+          <h1 id="hero-title">
+            <span class="hero-title-small">我是</span>
+            <span class="hero-title-main">spark</span>
+          </h1>
+          <p class="hero-lead">
+            <span>一名在读大二计算机学生，也是正在路上的 AI 学习者。</span>
+            <span>我喜欢把技术、创意和一点幽默精神揉在一起。</span>
+          </p>
+
+          <ul class="facts" aria-label="个人关键词">
+            <li>大二在读</li>
+            <li>计算机学生</li>
+            <li>AI 学习者</li>
+          </ul>
+
+          <a class="hero-link" href="#learning">
+            <span>看看我在学什么</span>
+            <span aria-hidden="true">↓</span>
+          </a>
+        </div>
+
+        <aside class="signal-board" aria-label="个人档案">
+          <div class="signal-grid" aria-hidden="true"></div>
+          <svg
+            class="spark-star"
+            viewBox="0 0 360 360"
+            role="img"
+            aria-label="一颗由锐利折线组成的蓝色星芒"
+          >
+            <path d="M180 0 210 113 301 29 247 132 360 120 264 180 360 240 247 228 301 331 210 247 180 360 150 247 59 331 113 228 0 240 96 180 0 120 113 132 59 29 150 113Z"></path>
+          </svg>
+          <p class="signal-caption">currently becoming...</p>
+          <dl class="signal-data">
+            <div>
+              <dt>坐标</dt>
+              <dd>计算机系 / 大二</dd>
+            </div>
+            <div>
+              <dt>起点</dt>
+              <dd>网络安全</dd>
+            </div>
+            <div>
+              <dt>正在</dt>
+              <dd>学习 AI，也学习怎么和它合作</dd>
+            </div>
+          </dl>
+        </aside>
+      </section>
+
+      <section class="learning-section" id="learning" aria-labelledby="learning-title">
+        <header class="section-heading">
+          <h2 id="learning-title">两条学习线索，<br>一个持续升级的我。</h2>
+          <p>
+            从理解数字世界的风险开始，到把 AI 变成日常学习与创造的伙伴。
+            方向在变，动手和好奇心没有变。
+          </p>
+        </header>
+
+        <div class="track-explorer">
+          <div class="track-tabs" role="tablist" aria-label="学习线索">
+            <button
+              type="button"
+              role="tab"
+              id="tab-security"
+              aria-selected="true"
+              aria-controls="panel-security"
+              tabindex="0"
+            >
+              <span class="tab-marker" aria-hidden="true"></span>
+              网络安全
+            </button>
+            <button
+              type="button"
+              role="tab"
+              id="tab-ai"
+              aria-selected="false"
+              aria-controls="panel-ai"
+              tabindex="-1"
+            >
+              <span class="tab-marker" aria-hidden="true"></span>
+              AI 学习伙伴
+            </button>
+          </div>
+
+          <div class="track-panels">
+            <article
+              class="track-panel track-panel-security"
+              id="panel-security"
+              role="tabpanel"
+              aria-labelledby="tab-security"
+              tabindex="0"
+            >
+              <div class="panel-copy">
+                <p class="panel-kicker">学习的起点</p>
+                <h3>先理解系统，<br>再理解风险。</h3>
+                <p>大一开始接触网络安全相关知识。比起追逐术语，我更在意先看清一件事怎样运行，再看它可能在哪里失去控制。</p>
+              </div>
+
+              <div class="learning-path" aria-label="网络安全学习过程">
+                <span>观察</span>
+                <i aria-hidden="true"></i>
+                <span>拆解</span>
+                <i aria-hidden="true"></i>
+                <span>实践</span>
+                <i aria-hidden="true"></i>
+                <span>复盘</span>
+              </div>
+            </article>
+
+            <article
+              class="track-panel track-panel-ai"
+              id="panel-ai"
+              role="tabpanel"
+              aria-labelledby="tab-ai"
+              tabindex="0"
+              hidden
+            >
+              <div class="panel-copy">
+                <p class="panel-kicker">正在发生的探索</p>
+                <h3>不只使用 AI，<br>也在学习如何与它协作。</h3>
+                <p>Agent 的出现让我对 AI 产生了更深的兴趣。我正在持续学习，尝试让它成为辅助生活和学习的伙伴，而不是只停留在一时新鲜。</p>
+              </div>
+
+              <div class="learning-path" aria-label="AI 学习过程">
+                <span>提问</span>
+                <i aria-hidden="true"></i>
+                <span>验证</span>
+                <i aria-hidden="true"></i>
+                <span>协作</span>
+                <i aria-hidden="true"></i>
+                <span>创造</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="about-section" id="about" aria-labelledby="about-title">
+        <div class="about-title-wrap">
+          <p class="about-margin-note">一点自我说明 / 不是简历</p>
+          <h2 id="about-title">把想法<br>变成能摸到的东西。</h2>
+        </div>
+
+        <div class="about-copy">
+          <p class="about-intro">
+            写代码、做项目，也做真正有人使用的小产品。
+          </p>
+          <p>我不是那种只把技术当作考试答案的人。对我来说，技术、创意与幽默感可以同时出现在一个项目里：它得有用，也可以有趣，最好还能让人记住。</p>
+
+          <div class="principle-list" aria-label="我做事的原则">
+            <div>
+              <span aria-hidden="true">✦</span>
+              <p><strong>保持好奇</strong>新问题值得先动手试一试。</p>
+            </div>
+            <div>
+              <span aria-hidden="true">✦</span>
+              <p><strong>做给真实的人</strong>有用，比“看起来厉害”更重要。</p>
+            </div>
+            <div>
+              <span aria-hidden="true">✦</span>
+              <p><strong>边做边校准</strong>不假装已经会了，持续复盘和升级。</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="quote-section" id="note" aria-labelledby="quote-title">
+        <div class="quote-orbit" aria-hidden="true">
+          <span>✦</span>
+        </div>
+        <p class="quote-label" id="quote-title">留给未来的一句话</p>
+        <blockquote>
+          你若瞄准月亮，<br>
+          即使迷失，<br>
+          也是落在星河之间。
+        </blockquote>
+        <p class="quote-signature">— spark 喜欢的一句话</p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>spark / learning in public</p>
+      <p>© <span id="current-year">2026</span> spark</p>
+    </footer>
+  </body>
+</html>
