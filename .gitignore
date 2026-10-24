@@ -29,3 +29,6 @@ coverage/
 *.log
 *.tmp
 
+# Local browser-automation artifacts
+.playwright-mcp/
+
